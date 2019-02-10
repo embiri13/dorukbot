@@ -103,7 +103,7 @@ client.on('message', msg => {
 		if (!msg.guild.member(msg.author).hasPermission("BAN_MEMBERS")) {
 			msg.author.sendMessage('Aleyküm selam,  hoş geldin ^^'); 
 		} else {
-		msg.reply('@🆂🅸🅻🅴🅽🆃#6666 ve ``◇~Տⅈℒℰℕᝨ▪`` AloneDark#5650');
+		msg.reply('KRAL | DORUK KRAL 💎#3385 bu etiketle');
 		}
 	}
 });
@@ -128,4 +128,4 @@ client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
-client.login(ayarlar.token);
+client.login(process.env.BOT_TOKEN);
